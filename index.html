@@ -1,30 +1,44 @@
 <!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
 <html lang="en">
   <head>
+    <!-- Sets character encoding to UTF-8 for full Unicode support -->
     <meta charset="UTF-8" />
+    <!-- Ensures responsive design on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Sets the title of the page shown in the browser tab -->
     <title>Assignment #9: Giphy API</title>
+    <!-- Loads Bootstrap CSS from CDN for styling and layout -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link href = "./css/style.css" rel="stylesheet" />
+    <!-- Links to your custom stylesheet -->
+    <link href="./css/style.css" rel="stylesheet" />
   </head>
+
   <body>
+    <!-- Main container with vertical spacing -->
     <div class="container my-5">
+      <!-- Page heading centered with bottom margin -->
       <h1 class="mb-4 text-center">Fetch a Gif</h1>
+      <!-- Search input row centered horizontally -->
       <div class="row justify-content-center mb-3">
         <div class="col-md-6">
+          <!-- Input field for entering search terms -->
           <input type="text" id="search-input" class="form-control" placeholder="Search for a GIF">
         </div>
       </div>
-        <!-- Adds search functionality-->
+      <!-- Button row centered horizontally -->
       <div class="d-flex justify-content-center mb-4">
+        <!-- Button that triggers the GIF fetch -->
         <button id="fetch-gif-btn" class="btn btn-primary">
           Fetch a GIF
         </button>
       </div>
+      <!-- Container where fetched GIFs will be displayed -->
       <div id="gif-container" class="row">
         <!-- Output gifs here -->
       </div>
     </div>
+    <!-- Loads your JavaScript file that contains the fetch logic -->
     <script src="./js/script.js"></script>
   </body>
 </html>
